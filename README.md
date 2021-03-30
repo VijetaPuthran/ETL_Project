@@ -4,6 +4,6 @@
 
 ## Introduction
 
-![restaurants](restaurant/restaurant.jpg)
+![restaurants](Resources/restaurant.jpg)
 (Image source: https://www.standard.co.uk/)
 
