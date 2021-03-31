@@ -7,3 +7,27 @@
 ![restaurants](Resources/restaurant.jpg)
 (Image source: https://www.standard.co.uk/)
 
+There were many summaries created in the year 2020, in the form of rankings by the "Restaurant Business" magazine. On the website you can find only basic information about ranked restaurants, the full data and analysis are available in the paid report.
+
+The pandemic had a major impact on a lot of businesses. The data can be used to tell the story of what 2020 was like for restaurants, what was popular, what could be more popular soon, or what the difference is between large companies and smaller businesses.
+
+The source of information for the ETL project is Kaggle. The dataset consists of 3 CSV files, Futurecsv, Independence.csv and Top250.csv
+
+## Objective of the Project
+
+The agenda of the project was to arrive at a single datasource consisting of the top restaurants information. This is achieved by using the 3 datasets that gives information of the ranking of the restaurants based on the sales made in the year 2020.
+
+## ETL Prework setup in pgAdmin
+
+The 'restaurant_db' database is created in pgAdmin4. 
+
+-- Create Table
+CREATE TABLE restaurant (
+  index int	PRIMARY KEY,
+  restaurant char(100),
+  sales_in_millions float,
+  city char(40),
+  state char(40)	
+);
+
+ 
