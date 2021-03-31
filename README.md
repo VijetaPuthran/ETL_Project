@@ -19,44 +19,33 @@ The agenda of the project was to arrive at a single datasource consisting of the
 
 ## ETL Prework setup in pgAdmin
 
-![schema](Resources/schema_sql.PNG)
-
 * The 'restaurant_db' database is created in pgAdmin4 and then the following table is created within:
     
 	* A 'restaurant' table is created consisting on the 'index' column as the primary key.
 	* The other columns that are created are 'restaurant','sales_in_millions', 'city', 'state'. 
 
-## Extraction
+## ETL(Extract Transform Load) Process
 
-![extraction](Resources/extraction.PNG)
+![etl](Resources/ETL.PNG)
+(source: https://www.era-environmental.com/)
+
+## Extract
 
 The extraction process involved importing the 3 CSV files into pandas dataframes. The 3 CSV files that were imported and converted to dataframes were Future50.csv, Independence50.csv and Top250.csv
 
 ## Transform
 
-![transform](Resources/drop_columns.PNG)
-
 The transformation process includes dropping the unnecessary columns that is not necessary for the final table. This was done for all the 3 dataframes. The number of rows in each of them are 50, 100 and 250 rows respectively.
-
-![merge](Resources/merged_table.PNG)
 
 The 3 dataframes are merged using the outer merge to arrive at the final dataframe with 400 rows. This dataframe has some duplicate column names and NaN values.
 
-![transformation](Resources/transformation.PNG)
-
 The data transformation involved copying the values from duplicate columns for respective restaurants where the values are null, so that we are not losing any data. The extra columns are then dropped in the next step.
 
-![col_drop](Resources/drop_columns_2.PNG)
-
 The duplicate columns are dropped using the drop() function.
-
-![rename](Resources/rename_cols.PNG)
 
 The column names are renamed in the format as is required in the database.
 
 ## Load
-
-![load](Resources/load.PNG)
 
 A connection to the database is setup. The successful connection to the database is verified by checking the table is created using engine.table_names(). The next step was to load the final dataframe into the database.
 
