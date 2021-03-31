@@ -60,7 +60,7 @@ The column names are renamed in the format as is required in the database.
 
 A connection to the database is setup. The successful connection to the database is verified by checking the table is created using engine.table_names(). The next step was to load the final dataframe into the database.
 
-!pgAdmin(Resources/pgAdmin.PNG)
+![pgAdmin](Resources/pgAdmin.PNG)
 
 The loading of the table is verified by querying the database.
 
