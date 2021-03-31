@@ -26,6 +26,16 @@ The agenda of the project was to arrive at a single datasource consisting of the
 	* A 'restaurant' table is created consisting on the 'index' column as the primary key.
 	* The other columns that are created are 'restaurant','sales_in_millions', 'city', 'state'. 
 
+## Extraction
+
+![extraction](Resources/extraction.png)
+
+The extraction process involved importing the 3 CSV files into pandas dataframes.
+
+
+
+
+
 
 
  
