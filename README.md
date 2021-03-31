@@ -27,13 +27,18 @@ The agenda of the project was to arrive at a single datasource consisting of the
 ## ETL(Extract Transform Load) Process
 
 ![etl](Resources/ETL.PNG)
-(source: https://www.era-environmental.com/)
+
+(Image source: https://www.era-environmental.com/)
 
 ## Extract
+
+![extract_img](Resources/extract_img.PNG)
 
 The extraction process involved importing the 3 CSV files into pandas dataframes. The 3 CSV files that were imported and converted to dataframes were Future50.csv, Independence50.csv and Top250.csv
 
 ## Transform
+
+![transform_img](Resources/Transform_img.PNG)
 
 The transformation process includes dropping the unnecessary columns that is not necessary for the final table. This was done for all the 3 dataframes. The number of rows in each of them are 50, 100 and 250 rows respectively.
 
@@ -46,6 +51,8 @@ The duplicate columns are dropped using the drop() function.
 The column names are renamed in the format as is required in the database.
 
 ## Load
+
+![load_img](Resources/Load_img.PNG)
 
 A connection to the database is setup. The successful connection to the database is verified by checking the table is created using engine.table_names(). The next step was to load the final dataframe into the database.
 
