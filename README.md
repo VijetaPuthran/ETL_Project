@@ -19,15 +19,13 @@ The agenda of the project was to arrive at a single datasource consisting of the
 
 ## ETL Prework setup in pgAdmin
 
-The 'restaurant_db' database is created in pgAdmin4. 
+![schema](Resources/schema_sql.png)
 
--- Create Table
-CREATE TABLE restaurant (
-  index int	PRIMARY KEY,
-  restaurant char(100),
-  sales_in_millions float,
-  city char(40),
-  state char(40)	
-);
+* The 'restaurant_db' database is created in pgAdmin4 and then the following table is created within:
+    
+	* A 'restaurant' table is created consisting on the 'index' column as the primary key.
+	* The other columns that are created are 'restaurant','sales_in_millions', 'city', 'state'. 
+
+
 
  
