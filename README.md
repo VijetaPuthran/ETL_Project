@@ -19,7 +19,7 @@ The agenda of the project was to arrive at a single datasource consisting of the
 
 ## ETL Prework setup in pgAdmin
 
-![schema](Resources/schema_sql.png)
+![schema](Resources/schema_sql.PNG)
 
 * The 'restaurant_db' database is created in pgAdmin4 and then the following table is created within:
     
@@ -28,7 +28,7 @@ The agenda of the project was to arrive at a single datasource consisting of the
 
 ## Extraction
 
-![extraction](Resources/extraction.png)
+![extraction](Resources/extraction.PNG)
 
 The extraction process involved importing the 3 CSV files into pandas dataframes.
 
