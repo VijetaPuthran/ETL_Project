@@ -62,7 +62,7 @@ The loading of the table is verified by querying the database.
 
 ## Conclusion
 
-The ETL process was implemented to arrive at a single dataset that was saved in the database for further analysis and reference. The database table consists of 400 clean data from the 3 datasets that provides information about top restaurants that were ranked based on sales in the year 2020.
+The ETL process was implemented to arrive at a single dataset that was saved in the database for further analysis and reference. The database table consists of 400 rows of clean data from the 3 datasets that provides information about top restaurants that were ranked based on sales in the year 2020.
 
 
 
