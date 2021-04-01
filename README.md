@@ -21,7 +21,7 @@ The agenda of the project was to arrive at a single datasource consisting of the
 
 * The 'restaurant_db' database is created in pgAdmin4 and then the following table is created within:
     
-	* A 'restaurant' table is created consisting on the 'index' column as the primary key.
+	* A 'restaurant' table is created consisting of the 'index' column as the primary key.
 	* The other columns that are created are 'restaurant','sales_in_millions', 'city', 'state'. 
 
 ## ETL(Extract Transform Load) Process
